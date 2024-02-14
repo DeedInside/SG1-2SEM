@@ -1,0 +1,17 @@
+﻿@using SG1.ViewModels
+@model IndexViewModel
+<div>
+    <h1>Пользователи машин</h1>
+    @foreach (var item in Model.user)
+    {
+        <p>пользователь:  @item.Name</p>
+    }
+</div>
+<div>
+    <h1>Список машин </h1>
+    @foreach (var item in Model.car)
+    {
+        <p>Марка машины: @item.Name</p>
+        <p>Год: @item.Age</p>    
+    }
+</div>
