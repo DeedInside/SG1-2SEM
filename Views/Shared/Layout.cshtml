@@ -3,10 +3,12 @@
         <title>SG1</title>
     </head>
     <body>
-        <div>header</div>
+        @await Html.PartialAsync("Header", new List<int>() { 1, 2, 3, 4, 5, 6 })
+
+        @await Html.PartialAsync("../Account/Reg")
 
         @RenderBody()
 
-        <div>footer</div>
+        @await Html.PartialAsync("Footer")
     </body>
 </html>

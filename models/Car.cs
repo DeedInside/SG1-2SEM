@@ -1,4 +1,6 @@
-﻿namespace SG1.models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SG1.models
 {
     public class Car
     {
@@ -7,7 +9,6 @@
             Name = name;
             Age = age;
         }
-
         public int Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
